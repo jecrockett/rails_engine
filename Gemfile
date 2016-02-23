@@ -14,6 +14,7 @@ group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'pry-byebug', require: 'pry-byebug'
+  gem 'rspec-rails'
 end
 
 group :development do

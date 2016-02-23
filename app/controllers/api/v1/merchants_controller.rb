@@ -8,6 +8,4 @@ class Api::V1::MerchantsController < Api::ApiController
   def show
     respond_with Merchant.find(params[:id])
   end
-
-
 end
