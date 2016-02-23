@@ -13,7 +13,7 @@ gem 'responders'
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
-  gem 'pry', require: 'pry'
+  gem 'pry-byebug', require: 'pry-byebug'
 end
 
 group :development do
