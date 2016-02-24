@@ -107,7 +107,7 @@ RSpec.describe Api::V1::InvoiceItems::FindController, type: :controller do
       found_invoice_items = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(found_invoice_items.count).to eq 3
+      expect(found_invoice_items.count).to eq 2
       expect(found_invoice_items.first['id']).to eq 2
     end
 
@@ -116,7 +116,7 @@ RSpec.describe Api::V1::InvoiceItems::FindController, type: :controller do
       found_invoice_items = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(found_invoice_items.count).to eq 3
+      expect(found_invoice_items.count).to eq 2
       expect(found_invoice_items.first['id']).to eq 2
     end
   end
