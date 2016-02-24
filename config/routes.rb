@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get '/merchants/random', to: 'merchants/random#show'
       get '/merchants/:id/items', to: 'merchants/items#index'
       get '/merchants/:id/invoices', to: 'merchants/invoices#index'
+      get '/merchants/:id/favorite_customer', to: 'merchants/favorite_customers#show'
       resources :merchants, only: [:index, :show]
 
       get '/customers/find', to: 'customers/find#show'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
       get '/customers/random', to: 'customers/random#show'
       get '/customers/:id/invoices', to: 'customers/invoices#index'
       get '/customers/:id/transactions', to: 'customers/transactions#index'
+      get '/customers/:id/favorite_merchant', to: 'customers/favorite_merchants#show'
       resources :customers, only: [:index, :show]
 
       get '/items/find', to: 'items/find#show'
