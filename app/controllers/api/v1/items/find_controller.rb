@@ -17,6 +17,7 @@ class Api::V1::Items::FindController < Api::ApiController
     case params.first[0]
     when "id" then respond_with Item.find(params[:id])
     when "name" then respond_with Item.find_by(name: params[:name])
+    when "description" then respond_with Item.find_by(description: params[:description])
     when "unit_price" then respond_with Item.find_by(unit_price: params[:unit_price])
     when "merchant_id" then respond_with Item.find_by(merchant_id: params[:merchant_id])
     when "created_at" then respond_with Item.find_by(created_at: params[:created_at])
