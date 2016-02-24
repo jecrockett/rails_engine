@@ -195,6 +195,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -476,6 +477,33 @@
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/invoices/customers_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/invoices/customers_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
@@ -1250,6 +1278,6 @@
         null
       ]
     },
-    "timestamp": 1456335424
+    "timestamp": 1456335724
   }
 }
