@@ -1,0 +1,20 @@
+first:
+  id: 1
+  first_name: customer_1
+  last_name: customer_one
+  created_at: 2012-03-27 14:54:09
+  updated_at: 2012-03-27 14:54:09
+
+second:
+  id: 2
+  first_name: customer_2
+  last_name: customer_two
+  created_at: 2012-03-27 14:54:10
+  updated_at: 2012-03-27 14:54:10
+
+third:
+  id: 3
+  first_name: customer_3
+  last_name: customer_three
+  created_at: 2012-03-27 14:54:10
+  updated_at: 2012-03-27 14:54:10

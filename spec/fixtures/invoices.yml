@@ -17,7 +17,7 @@ second:
 third:
   id: 3
   customer_id: 2
-  merchant_id: 1
+  merchant_id: 2
   status: shipped
   created_at: 2012-03-25 13:54:12
   updated_at: 2012-03-25 13:54:12

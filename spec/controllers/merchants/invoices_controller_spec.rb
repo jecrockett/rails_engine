@@ -8,7 +8,7 @@ RSpec.describe Api::V1::Merchants::InvoicesController, type: :controller do
       merchant_invoices = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(merchant_invoices.count).to eq 3
+      expect(merchant_invoices.count).to eq 2
     end
   end
 end
