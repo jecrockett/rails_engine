@@ -2,7 +2,6 @@ first:
   id: 1
   invoice_id: 1
   credit_card_number: 4242424242424242
-  credit_card_expiration_date:
   result: success
   created_at: 2012-03-27 14:54:10
   updated_at: 2012-03-27 14:54:10
@@ -11,7 +10,6 @@ second:
   id: 2
   invoice_id: 2
   credit_card_number: 4242424242424242
-  credit_card_expiration_date:
   result: success
   created_at: 2012-03-27 14:54:10
   updated_at: 2012-03-27 14:54:10
@@ -20,7 +18,6 @@ third:
   id: 3
   invoice_id: 3
   credit_card_number: 4242424242424242
-  credit_card_expiration_date:
   result: success
   created_at: 2012-03-27 14:54:11
   updated_at: 2012-03-27 14:54:11
