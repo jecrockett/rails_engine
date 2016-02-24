@@ -1327,7 +1327,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -1737,6 +1737,22 @@
         null,
         null
       ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/transactions/random_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/JEC/Turing/3Module/projects/rails_engine/app/models/customer.rb": [
         1,
         1,
@@ -1777,6 +1793,6 @@
         null
       ]
     },
-    "timestamp": 1456343434
+    "timestamp": 1456343699
   }
 }

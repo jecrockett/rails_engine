@@ -14,13 +14,13 @@ RSpec.describe Api::V1::InvoiceItems::FindController, type: :controller do
     end
 
     it "finds by item_id" do
-      invoice_item = invoice_items(:fourth)
+      invoice_item = invoice_items(:third)
 
       get :show, format: :json, item_id: invoice_item.item_id
       found_invoice_item = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(found_invoice_item['id']).to eq invoice_item.id
+      expect(found_invoice_item['invoice_id']).to eq invoice_item.invoice_id
     end
 
     it "finds by invoice_id" do
