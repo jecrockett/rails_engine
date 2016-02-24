@@ -14,7 +14,7 @@ RSpec.describe Api::V1::InvoiceItems::FindController, type: :controller do
     end
 
     it "finds by item_id" do
-      invoice_item = invoice_items(:third)
+      invoice_item = invoice_items(:fourth)
 
       get :show, format: :json, item_id: invoice_item.item_id
       found_invoice_item = JSON.parse(response.body)
