@@ -21,6 +21,12 @@ Rails.application.routes.draw do
       get '/items/:id/merchant', to: 'items/merchants#show'
       get '/items/:id/invoice_items', to: 'items/invoice_items#index'
       resources :items, only: [:index, :show]
+
+      get '/invoices/find', to: 'invoices/find#show'
+      get '/invoices/find_all', to: 'invoices/find#index'
+      get '/invoices/random', to: 'invoices/random#show'
+      resources :invoices, only: [:index, :show]
+
     end
   end
 end
