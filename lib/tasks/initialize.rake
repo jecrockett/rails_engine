@@ -19,7 +19,14 @@ task seed_data: [:environment] do
   end
 
   CSV.foreach(items, :headers => true) do |row|
-    Item.create! row.to_h
+    t = Item.create
+    t.name = row['name']
+    t.description = row['description']
+    t.unit_price = (row['unit_price'].to_f/100).to_s
+    t.merchant_id = row['merchant_id']
+    t.updated_at = row['updated_at']
+    t.created_at = row['created_at']
+    t.save
   end
 
   CSV.foreach(invoices, :headers => true) do |row|

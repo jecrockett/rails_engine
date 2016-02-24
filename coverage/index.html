@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-02-23T22:08:58-07:00">2016-02-23T22:08:58-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-02-24T09:30:35-07:00">2016-02-24T09:30:35-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.94%</span></span>
+    (<span class="covered_percent"><span class="green">98.96%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>51</b> files in total.
-    <b>472</b> relevant lines. 
-    <span class="green"><b>467</b> lines covered</span> and
+    <b>479</b> relevant lines. 
+    <span class="green"><b>474</b> lines covered</span> and
     <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -112,10 +112,10 @@
       
       <tr>
         <td class="strong"><a href="#10ea7b1a332dede3e410050985b3294efb37a636" class="src_link" title="app/controllers/api/v1/items/find_controller.rb">app/controllers/api/v1/items/find_controller.rb</a></td>
-        <td class="red strong">73.68 %</td>
-        <td>27</td>
-        <td>19</td>
-        <td>14</td>
+        <td class="red strong">75.0 %</td>
+        <td>28</td>
+        <td>20</td>
+        <td>15</td>
         <td>5</td>
         <td>1.1</td>
       </tr>
@@ -123,7 +123,7 @@
       <tr>
         <td class="strong"><a href="#950f0bce856da6dfc335c4e998fde3cf354f61ee" class="src_link" title="app/controllers/api/v1/items/invoice_items_controller.rb">app/controllers/api/v1/items/invoice_items_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>8</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -413,7 +413,7 @@
       <tr>
         <td class="strong"><a href="#3e48413a933785f7c84bf79adc29d398e2bc92da" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>27</td>
+        <td>26</td>
         <td>21</td>
         <td>21</td>
         <td>0</td>
@@ -473,9 +473,9 @@
       <tr>
         <td class="strong"><a href="#687c8a83c3a105b5206b768361013b2a72b9a5ed" class="src_link" title="spec/controllers/items/find_controller_spec.rb">spec/controllers/items/find_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>83</td>
-        <td>52</td>
-        <td>52</td>
+        <td>104</td>
+        <td>58</td>
+        <td>58</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -1071,10 +1071,10 @@
         <div class="source_table" id="10ea7b1a332dede3e410050985b3294efb37a636">
   <div class="header">
     <h3>app/controllers/api/v1/items/find_controller.rb</h3>
-    <h4><span class="red">73.68 %</span> covered</h4>
+    <h4><span class="red">75.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>20</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
@@ -1178,8 +1178,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="17">
+          <span class="hits">5</span>
           
           <code class="ruby">    case params.first[0]</code>
         </li>
@@ -1196,49 +1196,55 @@
           <code class="ruby">    when &quot;name&quot; then respond_with Item.find_by(name: params[:name])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    when &quot;unit_price&quot; then respond_with Item.find_by(unit_price: params[:unit_price])</code>
+          <code class="ruby">    when &quot;description&quot; then respond_with Item.find_by(description: params[:description])</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">    when &quot;merchant_id&quot; then respond_with Item.find_by(merchant_id: params[:merchant_id])</code>
+          <code class="ruby">    when &quot;unit_price&quot; then respond_with Item.find_by(unit_price: params[:unit_price])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="22">
           
-          <code class="ruby">    when &quot;created_at&quot; then respond_with Item.find_by(created_at: params[:created_at])</code>
+          
+          <code class="ruby">    when &quot;merchant_id&quot; then respond_with Item.find_by(merchant_id: params[:merchant_id])</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">    when &quot;updated_at&quot; then respond_with Item.find_by(updated_at: params[:updated_at])</code>
+          <code class="ruby">    when &quot;created_at&quot; then respond_with Item.find_by(created_at: params[:created_at])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    when &quot;updated_at&quot; then respond_with Item.find_by(updated_at: params[:updated_at])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>
@@ -1289,34 +1295,22 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    respond_with InvoiceItem.where(item_id: params[:id])</code>
+          <code class="ruby">    respond_with Item.find(params[:id]).invoice_items</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">    # binding.pry</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">    # respond_with Item.find(params[:id]).invoice_items</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -3521,22 +3515,16 @@
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">      # resources :transactions, only: [:index, :show]</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">end</code>
@@ -4685,8 +4673,8 @@
     <h3>spec/controllers/items/find_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>52</b> relevant lines. 
-      <span class="green"><b>52</b> lines covered</span> and
+      <b>58</b> relevant lines. 
+      <span class="green"><b>58</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4847,7 +4835,7 @@
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;finds by created_at&quot; do</code>
+          <code class="ruby">    it &quot;finds by description&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="27">
@@ -4865,7 +4853,7 @@
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :show, format: :json, created_at: thing.created_at</code>
+          <code class="ruby">      get :show, format: :json, description: thing.description</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="30">
@@ -4904,64 +4892,64 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="36">
           
-          <code class="ruby">    it &quot;finds by updated_at&quot; do</code>
+          
+          <code class="ruby">    # it &quot;finds by unit price&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="37">
           
-          <code class="ruby">      thing = items(:first)</code>
+          
+          <code class="ruby">    #   thing = items(:first)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="39">
           
-          <code class="ruby">      get :show, format: :json, updated_at: thing.updated_at</code>
+          
+          <code class="ruby">    #   get :show, format: :json, unit_price: &quot;2&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
           
-          <code class="ruby">      item = JSON.parse(response.body)</code>
+          
+          <code class="ruby">    #   item = JSON.parse(response.body)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="42">
           
-          <code class="ruby">      expect(response).to be_success</code>
+          
+          <code class="ruby">    #   expect(response).to be_success</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="43">
           
-          <code class="ruby">      expect(item[&#39;name&#39;]).to eq thing.name</code>
+          
+          <code class="ruby">    #   expect(item[&#39;unit_price&#39;]).to eq &#39;2&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">    #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
@@ -4973,73 +4961,73 @@
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;#index&quot; do</code>
+          <code class="ruby">    it &quot;finds by created_at&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;finds all by id&quot; do</code>
+          <code class="ruby">      thing = items(:first)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="49">
           
-          <code class="ruby">      get :index, format: :json, id: 1</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      items = JSON.parse(response.body)</code>
+          <code class="ruby">      get :show, format: :json, created_at: thing.created_at</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      item = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(response).to be_success</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
+          <code class="ruby">      expect(response).to be_success</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect(item[&#39;name&#39;]).to eq thing.name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">    it &quot;finds all by name&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index, format: :json, name: &#39;item_1&#39;</code>
+          <code class="ruby">    it &quot;finds by updated_at&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">      items = JSON.parse(response.body)</code>
+          <code class="ruby">      thing = items(:first)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
@@ -5051,43 +5039,43 @@
         <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to be_success</code>
+          <code class="ruby">      get :show, format: :json, updated_at: thing.updated_at</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
+          <code class="ruby">      item = JSON.parse(response.body)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      expect(response).to be_success</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;finds all by created_at&quot; do</code>
+          <code class="ruby">      expect(item[&#39;name&#39;]).to eq thing.name</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="65">
           
-          <code class="ruby">      get :index, format: :json, created_at: &quot;2012-03-27 14:53:59&quot;</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="66">
           
-          <code class="ruby">      items = JSON.parse(response.body)</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
@@ -5099,25 +5087,25 @@
         <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to be_success</code>
+          <code class="ruby">  describe &quot;#index&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
+          <code class="ruby">    it &quot;finds all by id&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="70">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(items.last[&#39;name&#39;]).to eq &#39;item_2&#39;</code>
+          <code class="ruby">      get :index, format: :json, id: 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      items = JSON.parse(response.body)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
@@ -5129,19 +5117,19 @@
         <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;finds all by updated_at&quot; do</code>
+          <code class="ruby">      expect(response).to be_success</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index, format: :json, updated_at: &quot;2012-03-27 14:53:59&quot;</code>
+          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="75">
           
-          <code class="ruby">      items = JSON.parse(response.body)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
@@ -5153,40 +5141,166 @@
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to be_success</code>
+          <code class="ruby">    it &quot;finds all by name&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(items.count).to eq 2</code>
+          <code class="ruby">      get :index, format: :json, name: &#39;item_1&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
+          <code class="ruby">      items = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to be_success</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
           <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(items.last[&#39;name&#39;]).to eq &#39;item_2&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="82">
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;finds all by created_at&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :index, format: :json, created_at: &quot;2012-03-27 14:53:59&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      items = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to be_success</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(items.last[&#39;name&#39;]).to eq &#39;item_2&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;finds all by updated_at&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :index, format: :json, updated_at: &quot;2012-03-27 14:53:59&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="96">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      items = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to be_success</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(items.count).to eq 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(items.first[&#39;name&#39;]).to eq &#39;item_1&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(items.last[&#39;name&#39;]).to eq &#39;item_2&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="104">
           
           
           <code class="ruby">end</code>
