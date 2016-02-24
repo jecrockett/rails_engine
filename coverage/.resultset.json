@@ -202,6 +202,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null
@@ -649,6 +650,32 @@
         null,
         null
       ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/invoice_items/invoices_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/invoice_items/random_controller_spec.rb": [
         1,
         null,
@@ -665,12 +692,12 @@
         null,
         null
       ],
-      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/invoices/random_controller.rb": [
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
         1,
         1,
         null,
         1,
-        2,
+        1,
         null,
         null,
         null
@@ -965,6 +992,16 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/invoices/random_controller.rb": [
         1,
         1,
         null,
@@ -1530,6 +1567,6 @@
         null
       ]
     },
-    "timestamp": 1456340224
+    "timestamp": 1456341336
   }
 }

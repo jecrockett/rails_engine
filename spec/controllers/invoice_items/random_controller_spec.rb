@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::Invoices::RandomController, type: :controller do
+RSpec.describe Api::V1::InvoiceItems::RandomController, type: :controller do
   fixtures :invoice_items
   describe "#show" do
     it "returns a random invoice_item" do
