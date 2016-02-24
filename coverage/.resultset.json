@@ -184,6 +184,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -587,6 +590,89 @@
         null,
         null
       ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/items/invoice_items_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/items/merchants_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/items/merchants_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/items/random_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/controllers/api/v1/items/random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/JEC/Turing/3Module/projects/rails_engine/spec/controllers/merchants/controller_spec.rb": [
         1,
         null,
@@ -841,6 +927,12 @@
         1,
         null
       ],
+      "/Users/JEC/Turing/3Module/projects/rails_engine/app/models/invoice_item.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/JEC/Turing/3Module/projects/rails_engine/app/models/merchant.rb": [
         1,
         1,
@@ -848,6 +940,6 @@
         null
       ]
     },
-    "timestamp": 1456288352
+    "timestamp": 1456290538
   }
 }

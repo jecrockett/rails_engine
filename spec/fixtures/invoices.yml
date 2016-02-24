@@ -3,8 +3,8 @@ first:
   customer_id: 1
   merchant_id: 1
   status: shipped
-  created_at: 2012-03-25 13:54:11
-  updated_at: 2012-03-25 13:54:11
+  created_at: 2012-03-25 13:54:12
+  updated_at: 2012-03-25 13:54:12
 
 second:
   id: 2
@@ -19,5 +19,5 @@ third:
   customer_id: 2
   merchant_id: 2
   status: shipped
-  created_at: 2012-03-25 13:54:12
-  updated_at: 2012-03-25 13:54:12
+  created_at: 2012-03-25 13:54:11
+  updated_at: 2012-03-25 13:54:11

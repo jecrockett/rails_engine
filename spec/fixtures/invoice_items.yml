@@ -1,0 +1,31 @@
+first:
+  item_id: 1
+  invoice_id: 1
+  quantity: 1
+  unit_price: 100
+  created_at: 2012-03-25 13:54:12
+  updated_at: 2012-03-25 13:54:12
+
+second:
+  item_id: 1
+  invoice_id: 2
+  quantity: 2
+  unit_price: 100
+  created_at: 2012-03-27 14:54:09
+  updated_at: 2012-03-27 14:54:09
+
+third:
+  item_id: 2
+  invoice_id: 2
+  quantity: 1
+  unit_price: 200
+  created_at: 2012-03-27 14:54:09
+  updated_at: 2012-03-27 14:54:09
+
+fourth:
+  item_id: 2
+  invoice_id: 3
+  quantity: 1
+  unit_price: 200
+  created_at: 2012-03-27 14:54:09
+  updated_at: 2012-03-27 14:54:09
