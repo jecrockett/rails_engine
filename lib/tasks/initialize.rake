@@ -22,7 +22,7 @@ task seed_data: [:environment] do
     t = Item.create
     t.name = row['name']
     t.description = row['description']
-    t.unit_price = (row['unit_price'].to_f/100).to_s
+    t.unit_price = (row['unit_price'].to_i/100.00)
     t.merchant_id = row['merchant_id']
     t.updated_at = row['updated_at']
     t.created_at = row['created_at']
@@ -48,7 +48,7 @@ task seed_data: [:environment] do
     t.item_id = row['item_id']
     t.invoice_id = row['invoice_id']
     t.quantity = row['quantity']
-    t.unit_price = (row['unit_price'].to_f/100).to_s
+    t.unit_price = (row['unit_price'].to_i/100.00)
     t.created_at = row['created_at']
     t.updated_at = row['updated_at']
     t.save  end

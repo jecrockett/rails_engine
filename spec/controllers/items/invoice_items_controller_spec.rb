@@ -9,8 +9,8 @@ RSpec.describe Api::V1::Items::InvoiceItemsController, type: :controller do
 
       expect(response).to be_success
       expect(invoice_items.count).to eq 2
-      expect(invoice_items.first['unit_price']).to eq 100
-      expect(invoice_items.last['unit_price']).to eq 100
+      expect(invoice_items.first['unit_price']).to eq "100.0"
+      expect(invoice_items.last['unit_price']).to eq "100.0"
     end
   end
 end

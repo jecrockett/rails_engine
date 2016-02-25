@@ -8,7 +8,8 @@ Rails.application.routes.draw do
       get '/merchants/:id/invoices', to: 'merchants/invoices#index'
       get '/merchants/:id/favorite_customer', to: 'merchants/favorite_customers#show'
       get '/merchants/:id/customers_with_pending_invoices', to: 'merchants/pending_invoices#show'
-      get '/api/v1/merchants/:id/revenue', to: 'merchants/revenue_totals#show'
+      get '/merchants/:id/revenue', to: 'merchants/revenues#show'
+      get '/merchants/revenue', to: 'merchants/revenues#index'
       resources :merchants, only: [:index, :show]
 
       get '/customers/find', to: 'customers/find#show'

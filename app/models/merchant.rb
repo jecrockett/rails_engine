@@ -12,6 +12,14 @@ class Merchant < ActiveRecord::Base
   end
 
   def total_revenue
-    invoices.joins(:invoice_items).sum("quantity * unit_price.to_i")
+    invoices.successful.joins(:invoice_items).sum("quantity * unit_price")
+  end
+
+  def revenue_by_date(date)
+    invoices.successful.by_date(date).joins(:invoice_items).sum("quantity * unit_price")
+  end
+
+  def self.total_revenue_by_date(date)
+    Invoice.successful.by_date(date).joins(:invoice_items).sum("quantity * unit_price")
   end
 end
