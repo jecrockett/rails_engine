@@ -442,10 +442,6 @@
       "/Users/JEC/Turing/3Module/projects/rails_engine/app/models/transaction.rb": [
         1,
         1,
-        null,
-        1,
-        0,
-        null,
         null
       ],
       "/Users/JEC/Turing/3Module/projects/rails_engine/app/models/invoice_item.rb": [
@@ -508,6 +504,6 @@
         null
       ]
     },
-    "timestamp": 1456370875
+    "timestamp": 1456373473
   }
 }

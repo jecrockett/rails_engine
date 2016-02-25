@@ -7,7 +7,7 @@ class Merchant < ActiveRecord::Base
     Customer.find(id)
   end
 
-  def pending_invoices
+  def customers_with_pending_invoices
     invoices.pending.distinct.map(&:customer)
   end
 
