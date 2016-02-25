@@ -3,8 +3,7 @@ class Merchant < ActiveRecord::Base
   has_many :items
 
   def favorite_customer
-    id = self.invoices.success.group(:customer_id).count.sort_by { |customer_id, num_of_invoices| num_of_invoices }.last.first
-    Customer.find(id)
+    self.invoices.success.joins(:customer).group(:customer).order(count: :desc).count.first.first
   end
 
   def customers_with_pending_invoices
