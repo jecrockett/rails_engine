@@ -5,15 +5,15 @@ class Invoice < ActiveRecord::Base
   belongs_to :customer
   belongs_to :merchant
 
-  def self.successful
-    joins(:transactions).where("result = 'success'")
+  def self.success
+    joins(:transactions).where(transactions: { result: 'success' })
   end
 
   def self.pending
-    joins(:transactions).where("result = 'failed'")
+    joins(:transactions).where(transactions: { result: 'failed' })
   end
 
-  def self.by_date(date)
+  def self.on(date)
     where(created_at: date)
   end
 end
